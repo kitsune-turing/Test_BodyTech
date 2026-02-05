@@ -74,6 +74,7 @@ git clone <repository-url>
 cd Test_BodyTech
 cd frontend
 npm install
+cd ..
 ```
 
 2. **Iniciar servicios con Docker Compose**
