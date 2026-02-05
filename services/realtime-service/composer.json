@@ -1,0 +1,16 @@
+{
+  "name": "taskmanager/realtime-service",
+  "description": "WebSocket service with Swoole for real-time notifications",
+  "type": "project",
+  "require": {
+    "php": ">=7.4",
+    "ext-swoole": "*",
+    "ext-redis": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "RealtimeService\\": "src/"
+    }
+  }
+}
