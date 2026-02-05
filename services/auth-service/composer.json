@@ -1,0 +1,34 @@
+{
+  "name": "taskmanager/auth-service",
+  "description": "Authentication microservice with JWT and Argon2id using Phalcon 4.x",
+  "type": "project",
+  "require": {
+    "php": ">=7.4",
+    "ext-pdo": "*",
+    "ext-redis": "*",
+    "ext-sodium": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AuthService\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AuthService\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "test:unit": "phpunit --testsuite=Unit",
+    "test:integration": "phpunit --testsuite=Integration"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}
